@@ -2,7 +2,6 @@
 import { delay, randomDelay, waitForTabLoad } from './utils.js';
 import * as L                                 from './logger.js';
 import { linkedinUrlsMessageAssist }      from './linkedin/message.js';
-import { twitterUrlsMessageAssist } from './twitter/message.js'
 import { linkedInConnectionAssist } from './linkedin/connect.js';
 
 const { downloadLog } = L;
@@ -57,17 +56,6 @@ async function drainReceivedUrls() {
             waitForTabLoad, 
             persona })
         }
-      }
-      else if(platform==="twitter"){
-        L.log("Calling Twitter Assist");
-        await twitterUrlsMessageAssist({
-          profiles: msg,
-          dryRun,
-          delay,
-          randomDelay,
-          waitForTabLoad,
-          persona
-        })
       }
 
     } catch (e) {

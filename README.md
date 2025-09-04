@@ -1,10 +1,15 @@
-# Streaml ConnectIN - Your Social Media Outreach Assistant
+# Streaml ConnectIN - Your LinkedIn Outreach Assistant
 
-Hey there! 👋 This is ConnectIN, a Chrome extension that helps you manage your LinkedIn and X (Twitter) outreach without the robotic feel. Think of it as your personal assistant for social media networking.
+Hey there! 👋 This is ConnectIN, a Chrome extension that helps you manage your LinkedIn networking without the robotic feel. Think of it as your personal assistant for LinkedIn outreach.
 
 ## What's This All About?
 
-ConnectIN works with Streaml to help you send personalized messages to LinkedIn profiles and X users. It can also send connection requests on LinkedIn. It's designed to be simple, safe, and actually useful - no AI-generated spam here!
+ConnectIN works with Streaml to help you with LinkedIn networking in three ways:
+- Send personalized messages to LinkedIn profiles
+- Send connection requests with personalized notes
+- Send connection requests without notes
+
+It's designed to be simple, safe, and actually useful - no AI-generated spam here!
 
 ### Two Modes to Keep You in Control
 
@@ -15,10 +20,11 @@ ConnectIN works with Streaml to help you send personalized messages to LinkedIn 
 
 1. **Set up your message**: Open the extension popup and write your default message in the Open section
 2. **Go live**: Switch the extension to Open mode
-3. **Let it work**: Streaml sends LinkedIn/X profile URLs to your extension
+3. **Let it work**: Streaml sends LinkedIn profile URLs to your extension
 4. **Review & send**: For each profile, ConnectIN opens the page, asks for your permission, and either:
    - Sends your personalized message, or
-   - Sends a connection request with your note
+   - Sends a connection request with your note, or
+   - Sends a connection request without a note
 
 When you're in Closed mode, everything stops - no surprises, no unwanted messages.
 
@@ -43,20 +49,21 @@ Here's what happens when ConnectIN is working:
   - Asks for your permission before taking action
   - Either sends your message or connection request based on what Streaml requests
   - For messages: finds and clicks the Message button, types your message, and sends it
-  - For connections: clicks Connect, adds your note, and sends the request
+  - For connections with notes: clicks Connect, adds your note, and sends the request
+  - For connections without notes: clicks Connect and sends the request directly
 
 ## Privacy & Permissions
 
 We keep it minimal and focused:
 
-- **tabs, scripting, activeTab**: Needed to open profile pages and send messages/requests
+- **tabs, scripting, activeTab**: Needed to open LinkedIn profile pages and send messages/requests
 - **storage**: Saves your mode preference and default message
-- **LinkedIn & X only**: The extension only works on `linkedin.com` and `x.com` - no other sites
+- **LinkedIn only**: The extension only works on `linkedin.com` - no other sites
 
 ## Why This Exists
 
-Social media outreach can be time-consuming and repetitive. ConnectIN is here to help you:
-- Save time on routine networking
+LinkedIn networking can be time-consuming and repetitive. ConnectIN is here to help you:
+- Save time on routine LinkedIn networking
 - Keep your outreach organized
 - Stay in control of your messaging and connection requests
 - Work seamlessly with Streaml
@@ -67,4 +74,4 @@ MIT License - feel free to use, modify, and share!
 
 ---
 
-**Note**: This extension is not affiliated with LinkedIn, X (Twitter). It's a third-party tool designed to make your social media workflow a bit easier.
+**Note**: This extension is not affiliated with LinkedIn. It's a third-party tool designed to make your LinkedIn networking workflow a bit easier.
